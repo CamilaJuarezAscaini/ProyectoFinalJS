@@ -1,0 +1,14 @@
+[
+    { "id": 1, "nombre": "Lengua de Suegra", "precio": 2000, "imageUrl": "LenguaDeSuegra.png" },
+    { "id": 2, "nombre": "Potus", "precio": 1500, "imageUrl": "potuss.jpg" },
+    { "id": 3, "nombre": "Rosario Corazon", "precio": 2500, "imageUrl": "RosarioCorazon.png" },
+    { "id": 4, "nombre": "Palmito", "precio": 1000, "imageUrl": "Palmito.png" },
+    { "id": 5, "nombre": "Lirio de la Paz", "precio": 2000, "imageUrl": "lilirios.jpg" },
+    { "id": 6, "nombre": "China del Dinero", "precio": 2000, "imageUrl": "ChinaDinero.png" },
+    { "id": 7, "nombre": "Pluma Rosa", "precio": 4000, "imageUrl": "plumaRosa.png" },
+    { "id": 8, "nombre": "Alocasia", "precio": 6000, "imageUrl": "alocasia.png" },
+    { "id": 9, "nombre": "Monstera Deliciosa", "precio": 6800, "imageUrl": "MonsteraDeliciosa.png" },
+    { "id": 10, "nombre": "Orquídea", "precio": 4200, "imageUrl": "orquidea.png" },
+    { "id": 11, "nombre": "Begonia Rex", "precio": 5000, "imageUrl": "Rex.png" },
+    { "id": 12, "nombre": "Lazo de Amor", "precio": 3400, "imageUrl": "LazoDeAmor.jpg" }
+]

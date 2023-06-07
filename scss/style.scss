@@ -13,6 +13,11 @@ $espacioSuperior: 35px;
 
 }
 
+body {
+    background-image: url(../assets/img/mifondo.png);
+    overflow: auto;
+}
+
 /* LOGO */
 header {
     img {
@@ -34,7 +39,7 @@ h1 {
 
 // INDEX
 
-#imgCarrito{
+#imgCarrito {
     height: 40px;
     width: 58px;
 }
@@ -61,3 +66,28 @@ main {
         }
     }
 }
+
+// IMAGENES
+
+#posiCarrito {
+    position: fixed;
+    right: 5%;
+}
+
+.marginText {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.fotosProductos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.centrado {
+    text-align: center;
+}
+

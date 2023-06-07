@@ -30,9 +30,35 @@
                         <a class="nav-link" href="../pages/plantas.html">Plantas</a>
                     </div>
                 </div>
+                <div>
+                    <a class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+                        <img src="../assets/img/carritoLogo.png" alt="carritoLogo" id="imgCarrito">
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
+
+    <!-- CARRITO DE COMPRAS -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="col-sm-3" id="posiCarrito">
+                <!-- LISTA CARRITO -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- TOTAL -->
+                <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+
+            </div>
+        </div>
+    </div>
 
     <main>
         <h2>Què planta deseas llevar?</h2>
@@ -40,23 +66,16 @@
             <div class="row">
                 <!-- PRODUCTOS -->
                 <section id="items" class="col-sm-9"></section>
-                <!-- CARRITO -->
-                <section class="col-sm-3" id="posiCarrito">
-                    <h2>Carrito de Compras</h2>
-                    <!-- LISTA CARRITO -->
-                    <ul id="carrito" class="list-group"></ul>
-                    <hr>
-                    <!-- TOTAL -->
-                    <p class="text-right">Total: <span id="total"></span>&dollar;</p>
-                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                </section>
+
             </div>
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="../js/app.js"></script>
 </body>
 
