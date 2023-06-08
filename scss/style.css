@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 /*CSS BODY*/
 * {
@@ -26,9 +27,13 @@ h1 {
   font-size: 35px;
 }
 
+h2 {
+  margin-top: 35px;
+}
+
 #imgCarrito {
-  height: 40px;
-  width: 58px;
+  height: 30px;
+  width: 30px;
 }
 
 #texto {
@@ -66,8 +71,14 @@ main section iframe {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 850px;
 }
 
 .centrado {
   text-align: center;
+}
+
+.tamañoCard {
+  margin-right: 50px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

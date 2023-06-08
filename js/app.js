@@ -30,11 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function generarProductos() {
         baseDeDatos.forEach((item) => {
             const card = document.createElement("div");
-            card.classList.add("card", "col-sm-3", "fotosProductos");
+            card.classList.add("card", "col-sm-3", "tamañoCard");
             card.innerHTML = `
-                  <img src="../assets/img/${item.imageUrl}" alt="${item.nombre}" class="tamañoImagen card-img-top">
+                  <img src="../assets/img/${item.imageUrl}" alt="${item.nombre}" class="card-img-top">
                     <div class="card-body centrado"> 
-                        <h6 class="card-title centrado">${item.nombre}</h6>
+                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal${item.id}">${item.nombre}</a></p>
                         <p class="card-text centrado marginText"> ${divisa} ${item.precio}</p>
                        <button type="button" class="btn btn-primary btn-sm centrado" id="btnAgregar-${item.id}">Agregar al Carrito</button>
                     </div>
@@ -96,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Desea eliminar los items del carrito?',
             confirmButtonText: 'Aceptar',
             showCancelButton: true,
-            cancelButtonText: 'Cancelarx'
+            cancelButtonText: 'Cancelar'
         }).then((resultado) => {
             if (resultado.isConfirmed) {
                 vaciarCarrito()

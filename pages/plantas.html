@@ -41,6 +41,18 @@
     </header>
 
     <!-- CARRITO DE COMPRAS -->
+   
+
+    <main>
+        <h2>Què planta deseas llevar?</h2>
+        <div class="container">
+            <div class="row">
+                <!-- PRODUCTOS -->
+                <section id="items" class="fotosProductos "></section>
+            </div>
+        </div>
+    </main>
+
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito de Compras</h5>
@@ -48,7 +60,7 @@
         </div>
         <div class="offcanvas-body">
 
-            <div class="col-sm-3" id="posiCarrito">
+            <div id="posiCarrito">
                 <!-- LISTA CARRITO -->
                 <ul id="carrito" class="list-group"></ul>
                 <hr>
@@ -60,16 +72,420 @@
         </div>
     </div>
 
-    <main>
-        <h2>Què planta deseas llevar?</h2>
-        <div class="container">
-            <div class="row">
-                <!-- PRODUCTOS -->
-                <section id="items" class="col-sm-9"></section>
 
+    <!-- VENTANAS MODAL -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lengua de Suegra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <p>La sansevieria es una planta de interior fácil de cultivar, aguanta muy bien tanto temperaturas
+                        elevadas como bajas. Es recomendada por el Feng Shui para atraer buenas energías.
+                        Es duradera, y sus hojas pueden llegar a alcanzar los 50 cm de altura.</p>
+
+                    <h4>¿QUÉ SIGNIFICA SU NOMBRE?</h4>
+                    <p>Se debe a la comparación de sus largas hojas con la
+                        lengua y larga (a modo burlón) que se les atribuía a las "suegras más charlatanas" por hablar y
+                        criticar a sus respectivos yernos.</p>
+
+                    <h4>BENEFICIOS DE LA SANSEVIERIA</h4>
+                    <p>Es una planta que purifica el aire, recomendada para eliminar del aire que respiramos tóxicos
+                        como
+                        el benceno, el tolueno, el xileno, el tricloroetileno y el formaldehído. Es
+                        muy
+                        resistente a las plagas, incluso los ácaros lo tienen difícil con ella. Por ello, está el
+                        top
+                        ten de las que no pueden faltar en tu casa si eres
+                        principiante. </p>
+
+                    <h4>CÓMO CUIDAR UNA SANSEVIERIA</h4>
+                    <h6>Luz:</h6>
+                    <p>Se recomienda colocarla en lugares con mucha luz porque, al ser de
+                        crecimiento lento (solo crea 3-4 hojas nuevas al año), las hojas no tendrán fuerza y les costará
+                        crecer rectas y erguidas. </p>
+                    <h6>Temperatura:</h6>
+                    <p>La ideal está entre los 15 y 20°C, aunque en verano puede aguantar bien
+                        temperaturas de 30º. Evita las corrientes de aire.</p>
+                    <h6>Riego:</h6>
+                    <p>Solo cuando la tierra esté seca. En
+                        invierno, necesita agua una o dos veces al mes, siempre dependiendo de la temperatura del
+                        ambiente interior. El exceso de agua puede ocasionar la pudrición del tallo. No le gustan los
+                        ambientes húmedos, así que es preferible evitar la
+                        pulverización de agua.</p>
+                    <h6>Trasplante:</h6>
+                    <p>Si la maceta se ha quedado pequeña, lo ideal es que la pases a una más grande cuando
+                        empieza la primavera. Para asegurar un buen drenaje es recomendable colocar
+                        en
+                        el fondo de la maceta unos trozos de barro cocido o piedras que evitan que el sustrato quede
+                        completamente encharcado. Si no se trasplanta, es aconsejable renovar el sustrato superior:
+                        retira 3cm del sustrato superficial y pon tierra nueva.</p>
+                    <h6>Abono:</h6>
+                    <p>Aplica abono cuando las temperaturas comiencen a subir, y hazlo una vez al mes hasta que
+                        comiencen a bajar las temperaturas de nuevo.</p>
+                    <h6>Poda:</h6>
+                    <p>No requiere que se pode, pero es recomendable quitar las hojas secas para evitar enfermedades.
+                    </p>
+                    <h6>Floración:</h6>
+                    <p>Esta planta tropical no suele florecer en el interior, pero si lo hace, aparecerán
+                        pequeñas flores a finales del verano.</p>
+                    <h6>Cuidados adicionales:</h6>
+                    <p>Procura no tocar las puntas de las hojas, ya que son sensibles y pueden
+                        estropearse con facilidad. </p>
+
+                    <h4>¿QUÉ CURA LA PLANTA LENGUA DE SUEGRA?</h4>
+                    <p>En cuanto a su uso atópico, ayuda a cicatrizar heridas.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Potus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <p>Si eres nuevo en el mundo de las plantas, o simplemente no tienes tanto tiempo para cuidarlas, es
+                        la opción que necesitas en casa.</p>
+
+                    <h4>¿QUÉ SIGNIFICA SU NOMBRE?</h4>
+                    <p>Algunos más románticos, lo relacionan con la mitología griega. Poto era la personificación del
+                        deseo
+                        amoroso. Era hijo de Céfiro e Iris y formaba parte del cortejo de Afrodita.</p>
+
+                    <h4>CARACTERÍSTICAS DEL POTUS</h4>
+                    <p>Es una planta de hoja perenne con forma de corazón. Puede alcanzar una altura máxima de 20
+                        metros.
+                        Al principio, las hojas crecen enteras, pero posteriormente (al alcanzar la madurez)
+                        es normal que se vuelvan pinnadas. También es conocida por su cualidad para purificar el aire,
+                        absorbiendo y eliminando sustancias tóxicas como el formaldehído, que se desprende de muchos
+                        materiales y elementos habituales en la casa.</p>
+
+                    <h4>¿QUÉ SIGNIFICA EL POTUS?</h4>
+                    <p>Tiene, según el Feng Shui, la capacidad de
+                        transformar la energía negativa que se acumula en el ambiente. Tener esta planta significa
+                        purificación. Es una planta que irradia fortaleza, por lo que ayuda a revitalizar cualquier
+                        espacio.</p>
+
+                    <h4>TIPOS DE POTUS</h4>
+                    <h6>Potus Dorado:</h6>
+                    <p> Es el potus común, tiene hojas abigarradas que muestran una aguda mezcla de tonos verdes y
+                        amarillos. Necesitará un poco más de luz solar para mantener su atractivo diseño. </p>
+                    <div class="text-center">
+                        <img src="../assets/img/PotusDorado.png" class="img-fluid " alt="PotusDorado">
+                    </div>
+
+                    <h6>Marble Queen:</h6>
+                    <p> Sus hojas variegadas son de un precioso tono, entre el verde y el blanco. Estas tienen forma de
+                        corazón cuando la planta es más adulta. A este tipo le gusta, como es natural, la luz
+                        solar indirecta y brillante, pero también tolera condiciones de poca luz (aunque es la variedad
+                        que más luz necesita).</p>
+                    <div class="text-center">
+                        <img class="img-fluid" src="../assets/img/PotusMarble.png" alt="PotusMarbleQueen">
+                    </div>
+
+                    <h6>Potus Neon/Lemon:</h6>
+                    <p> Es una de las variedades más divertidas y distintivas. Sus hojas
+                        color verde amarillento muy claras y brillantes no pasan desapercibidas. Para mantener ese tono
+                        hay que poner la planta en puntos luminosos, por
+                        lo contrario el color se apagará y oscurecerá.</p>
+                    <div class="text-center">
+                        <img class="img-fluid" src="../assets/img/PotusLemon.png" alt="PotusNeon">
+                    </div>
+
+                    <h4>CUIDADOS DEL POTUS</h4>
+                    <h6>Luz:</h6>
+                    <p>Necesita mucha iluminación, sin que le dé el sol directo. Si la
+                        planta tiene mucha claridad, crecerá con fuerza y presentará bastante resistencia a
+                        las
+                        enfermedades.</p>
+                    <h6>Riego:</h6>
+                    <p>Depende de muchos factores como la luz, la época del año o las corrientes. Es una planta que no
+                        requiere de una humedad constante en la tierra, ya que es especialista en coger humedad del
+                        ambiente. Lo ideal es observar la planta y dejar que la tierra esté seca durante un mínimo de 2
+                        o 3 días antes de regarla.</p>
+                    <h6>Transplante:</h6>
+                    <p> Una vez al año y lo más recomendable es hacerlo en primavera.</p>
+                    <h6>Cuidados adicionales:</h6>
+                    <p>Elimina las hojas marchitas. Desinfecta siempre las herramientas de poda.</p>
+                    <h6>Hojas amarillas:</h6>
+                    <p> Cuando se secan las hojas, lo más probable es que la planta se encuentre en mal
+                        estado. Lo mismo ocurre cuando hay un exceso de humedad. En ese caso comienza a adquirir en las
+                        hojas un color amarillo. Si en algún momento, dejas la tierra con un plato de agua de manera que
+                        no
+                        se seque totalmente, es muy probable que ese exceso de humedad genere problemas. Es mejor riegos
+                        abundantes, introduciendo si es necesario toda la maceta en un cubo de agua para que se
+                        humedezca
+                        bien su interior, pero acto seguido, es mejor que la retiremos del agua para que se vaya secando
+                        la
+                        tierra poco a poco. Otro de los motivos es por la falta de nutrientes en la tierra. Va
+                        alimentándose
+                        de las sales y minerales que encuentra en el sustrato. Sin embargo, cuando pasan unos meses, esa
+                        tierra se agota, así que debemos cambiarla y añadir en el riego un poco de abono para plantas
+                        naturales, preferiblemente líquido. </p>
+                    <h6>Poda:</h6>
+                    <p> Se puede llevar a cabo en cualquier época del año. Aunque es cierto que lo mejor es esperar a
+                        que la planta esté menos activa.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Rosario de Corazón</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <p>La Ceropegia Woodii es una planta de interior fácil de mantener. Es trepadora de porte colgante
+                        que puede llegar a alcanzar de 2 a 4 metros
+                        de longitud. Es sin duda una de las plantas favoritas en decoración por sus largos tallos con
+                        hermosas flores rosadas y pequeñas hojas en forma de corazón.</p>
+
+                    <h4>CARACTERÍSTICAS DE LA CEROPEGIA WOODII</h4>
+                    <p>Debe su nombre a John Medley Wood, quien era curador de
+                        los jardines botánicos de Durban en Sudáfrica.</p>
+                    <p>Cuando recibe suficiente luminosidad, las hojas cobran una tonalidad verde intenso y palidecen en
+                        el
+                        caso de que la planta reciba poca luz. Se debe tener en cuenta que necesita mucha luz para
+                        llegar a
+                        florecer. Tiene tubérculos en sus raíces y en los tallos que funcionan como reservas de agua, lo
+                        que
+                        la convierte en una planta resistente a la sequía.</p>
+                    <p>No es tóxica para mascotas. </p>
+
+                    <h4>CUIDADOS DE LA CEROPEGIA WOODII</h4>
+                    <h6>Riego:</h6>
+                    <p>Con moderación, incluso por inmersión, pero es fundamental asegurar un
+                        buen drenaje. A menudo esta planta muere precisamente porque las raíces se pudren, (si las hojas
+                        se
+                        ponen amarillas probablemente se esté ahogando), por lo que es muy importante utilizar macetas
+                        con
+                        agujeros en la base para evitar el estancamiento, y esperar a que la tierra se seque entre
+                        riegos.
+                        Reducir el riego en otoño e invierno. Si las hojas se marchitan y se caen, especialmente en
+                        verano,
+                        seguramente necesite más agua.</p>
+                    <h6>Iluminación:</h6>
+                    <p>Abundante luz indirecta. Pequeñas dosis de sol
+                        directo son buenas, sin embargo, demasiado sol directo podría quemar sus hojas. Esta planta no
+                        es
+                        adecuada para entornos con poca luz.</p>
+                    <h6>Temperatura:</h6>
+                    <p>La temperatura óptima es de 18 a 25º C en verano, pero soporta temperaturas más altas.
+                        Preferiblemente no bajar de 15º C en invierno.</p>
+                    <h6>Humedad:</h6>
+                    <p>No necesita niveles altos de humedad, por lo que soporta bien los climas secos. No es
+                        necesario pulverizar sus hojas.</p>
+                    <h6>Abono:</h6>
+                    <p>No es necesario abonar la planta, sin embargo un aporte de nutrientes ayudará a favorecer su
+                        crecimiento y desarrollo. Abonar con un fertilizante una vez al mes durante los meses de
+                        crecimiento
+                        (primavera/verano).</p>
+
+                    <h6>PROPAGACIÓN</h6>
+                    <p>Por tierra solo tendrás que cortar esquejes de la punta del tallo y enterrar los extremos en la
+                        tierra húmeda de la maceta.</p>
+                    <p>Por agua simplemente corta varios esquejes de unos pocos centímetros de largo, mételos en un
+                        recipiente con agua y sitúalo en un lugar donde reciba luz indirecta. Es importante retirar las
+                        hojas de la parte de cada esqueje que vaya a estar bajo el agua. Esto ayudará a evitar que esas
+                        hojas se pudran y a mantener el agua más limpia. No olvides cambiar el agua al menos una vez a
+                        la
+                        semana. Si notas que el agua se vuelve turbia, realiza cambios con más frecuencia. Cuando veas
+                        que
+                        los
+                        esquejes hayan echado suficientes raíces (no es necesario que se alarguen demasiado), es el
+                        momento
+                        de plantarlos en la tierra.</p>
+                    <p>Mediante tubérculos, dependiendo de la edad de la planta, verás de varios tamaños a lo largo de
+                        sus
+                        tallos. Hay
+                        que enterrar el tubérculo, preferiblemente aún adherido la planta, en el sustrato de otra
+                        maceta.
+                        Mantener la tierra húmeda pero no mojada para fomentar así el enraizamiento. Una vez que el
+                        tubérculo esté bien enraizado y creciendo durante algunas semanas o meses, se puede separar de
+                        la
+                        planta original.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Palmera Palmito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <p>También llamada Chamaerops humilis, es una planta trepadora tropical. Su fruto, también llamado
+                        palmito, es comúnmente
+                        utilizado en la cocina como ingrediente en platos salados y dulces. También se utiliza para
+                        hacer
+                        aceite y según algunas tradiciones, se cree que el palmito tiene propiedades medicinales. Es una
+                        planta de crecimiento rápido y puede llegar a medir hasta 20 metros de altura. </p>
+
+                    <h4>CUIDADOS DE LA CHAMAEROPS HUMILIS</h4>
+                    <h6>Luz:</h6>
+                    <p>Prefiere una luz indirecta y protegida del sol directo, por lo que
+                        es mejor situarla en un lugar que reciba sombra parcial durante parte del día. Sin embargo,
+                        también
+                        puede tolerar una exposición moderada a la luz solar directa si el suelo se mantiene húmedo y se
+                        evita el exceso de calor.</p>
+                    <h6>Riego:</h6>
+                    <p>Necesitan una cantidad moderada de agua para crecer y prosperar. Es importante mantener el
+                        suelo húmedo pero sin excederse, ya que puede causar problemas como el
+                        encharcamiento del suelo y el desarrollo de enfermedades.</p>
+                    <h6>Temperatura:</h6>
+                    <p>Son plantas que pueden encontrarse en climas cálidos y húmedos.</p>
+                    <h6>Transplante:</h6>
+                    <p>El momento ideal es durante la primavera, cuando la planta está en plena época de
+                        crecimiento.</p>
+                    <h6>Abono:</h6>
+                    <p>Necesita una buena cantidad de nutrientes para crecer fuerte y saludable. Por lo tanto, es
+                        importante abonarla regularmente. La frecuencia con la que se debe abonar la planta de palmito
+                        depende de varios factores, como el tipo de suelo en el que se encuentra, la cantidad de luz que
+                        recibe y la época del año. En general, se recomienda abonar la planta cada dos o tres meses
+                        durante
+                        la primavera y el verano, cuando está en plena floración y crecimiento.</p>
+                    <h6>Poda:</h6>
+                    <p>Es recomendable para mantenerla en buena forma y ayudarla a crecer de manera más fuerte y
+                        saludable. Ayuda controlar el tamaño y la forma de la planta. También puede ayudar a mejorar la
+                        producción de nuevos brotes y hojas. La poda se debe realizar en la época de crecimiento. Se
+                        recomienda utilizar tijeras limpias y afiladas
+                        para
+                        evitar dañarla.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lirio de la Paz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <p>El espatifilo es una planta de interior llena de hojas verdes y unas flores en blanco muy
+                        elegantes.</p>
+
+                    <h4>CARACTERÍSTICAS DEL ESPATIFILO</h4>
+                    <p>Esta planta perenne de origen sudamericano aporta mucha paz y tranquilidad a la casa. Además, es
+                        una
+                        de las plantas de interior más utilizadas para purificar el aire. Sus brillantes hojas tienen
+                        una
+                        elegante forma lanceolada y, en condiciones de buena iluminación, produce flores blancas,
+                        grandes y
+                        duraderas. Es una planta muy seductora para cualquier principiante porque es exquisita y se
+                        adapta a
+                        cualquier entorno.</p>
+                    <p>Es una planta tóxica para perros y gatos.</p>
+
+                    <h2>¿QUÉ SIGNIFICA EL ESPATIFILO?</h2>
+                    <p>El significado más extendido de estas flores es el de paz y amor. Sus características
+                        hacen que también sean vistas como un símbolo de la curación. <br>
+                        Representan el perdón. Son ideales para tratar de recuperar la confianza que alguien tenía
+                        depositada en ti. <br>
+                        Están asociadas a la candidez, la virginidad, la pureza y el amor. <br>
+                        Son la representación de la curación y tienen valor espiritual. Este motivo es la causa del
+                        lirio de
+                        la paz o espatifilo, forme parte de las coronas de flores para difuntos.</p>
+
+
+                    <h2>BENEFICIOS DEL ESPATIFILO</h2>
+                    <p>El Espatifilo es una planta idónea para crecer en interiores con buena iluminación ya que
+                        requiere de pocos cuidados. Un estudio de la NASA sobre el “síndrome del edificio enfermo”
+                        (SBS
+                        sick building syndrome) incluyó al Espatifilo entre las diez plantas más adecuadas para
+                        purificar el aire.</p>
+
+                    <h2>CUIDADOS DEL ESPATIFILO</h2>
+                    <h6>Luz:</h6>
+                    <p>El espatifilo es una planta de interior que necesita bastante luz, pero no un sol directo. El
+                        mejor sitio para esta planta es cerca de una ventana.</p>
+                    <h6>Riego:</h6>
+                    <p>Muy moderado. Durante la temporada de primavera-verano es mejor hacer un riego regular, e
+                        intentar que la tierra siempre esté húmeda. También conviene pulverizar la tierra de vez en
+                        cuando
+                        para que se mantenga húmeda. En otoño-invierno es mejor espaciar el riego a una o dos veces
+                        por
+                        semana. No la inundes cada dos por tres porque enfermará. Deja que se seque la tierra entre
+                        riegos o
+                        cuando veas que las hojas apuntan hacia bajo. Procura aportarle agua libre de cloro: bastará
+                        con
+                        que
+                        dejes reposar el agua del grifo toda la noche para que se evapore el cloro.</p>
+                    <h6>Temperatura:</h6>
+                    <p>Es una flor de invierno que se adapta bien a casi todos los climas. Cuando mejor crece
+                        esta planta es cuando se mantiene a temperaturas alrededor de los 20-22 °C. Es recomendable
+                        que
+                        esta
+                        planta no esté cerca de estufas, ni calentadores, ya que tiende a hacer que el aire sea muy
+                        seco, y
+                        al espatifilo no le viene bien. En invierno puede estar perfectamente entre los 16-17°C.</p>
+                    <h6>Transplante:</h6>
+                    <p>Para garantizar un correcto crecimiento es aconsejable trasplantar esta planta al menos
+                        cada 2 años y en primavera.</p>
+
+                    <h2>¿CÓMO HACER PARA QUE FLOREZCA EL ESPATIFILO?</h2>
+                    <p>Florece todo el año, y cuando comienza a marchitarse hay que podarla dos o tres centímetros
+                        por
+                        encima de la unión con la hoja. Pasado un mes, el tallo se habrá secado, podrás retirarlo y
+                        volverá
+                        a florecer.</p>
+                    <p>Lo normal es que el espatifilo pueda florecer más de una vez al año. Aunque es cierto que
+                        esto
+                        dependerá mucho de los cuidados básicos que hagas. Si estás pendiente del mantenimiento de
+                        la
+                        planta, lo más habitual es que florezca y viva mucho. <br>
+                        Si no da flores, comprueba si hay luz suficiente o si el nivel de humedad de la tierra es
+                        bajo.
+                    </p>
+
+                    <h2>MANCHAS NEGRAS</h2>
+                    <p>El espatifilo es una planta con un crecimiento lento en invierno. Si se realiza un exceso de
+                        riego,
+                        pueden aparecer manchas negras en las hojas. Para evitar simplemente hay que reducir el
+                        riego.
+                        El
+                        mejor método para regar las plantas es colocando la maceta dentro de un balde lleno de agua.
+                        Mantén
+                        la planta sumergida en el balde unos minutos hasta que se absorba el agua.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
