@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-// VARIABLES
-$espacioSuperior: 35px;
-
-
 /*CSS BODY*/
 * {
     margin: 0%;
@@ -13,31 +9,49 @@ $espacioSuperior: 35px;
 
 }
 
+// TITULOS
+
+h1 {
+    color: rgb(40, 97, 113);
+    text-align: center;
+    font-size: 35px;
+}
+
+h2{
+    color: rgb(92, 138, 151);
+    text-align: center;
+    font-size: 25px;
+    margin-top: $espacioSuperior;
+}
+
+h3 {
+    display: flex;
+    margin-top: -20px;
+    justify-content: center;
+    font-size: 22px;
+}
+
+h5 {
+    margin-top: 35px;
+    font-size: 96%;
+}
+
+// VARIABLES
+$espacioSuperior: 35px;
+
+
 body {
     background-image: url(../assets/img/mifondo.png);
     overflow: auto;
 }
 
 /* LOGO */
-header {
-    img {
-        margin: auto;
-        display: block;
-        height: 20%;
-        width: 20%;
-    }
-}
 
-// TITULOS
-
-h1 {
-    color: rgb(37, 100, 118);
-    text-align: center;
-    font-size: 35px;
-}
-
-h2{
-    margin-top: $espacioSuperior;
+.logoPrincipal {
+    margin: auto;
+    display: block;
+    height: 20%;
+    width: 20%;
 }
 
 
@@ -71,9 +85,8 @@ main {
     }
 }
 
-// IMAGENES
 
-#posiCarrito {
+.posiCarrito {
     position: fixed;
     right: 5%;
 }
@@ -100,3 +113,10 @@ main {
     margin-right: 50px;
     margin-bottom: 40px;
 }
+
+.positionSticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+

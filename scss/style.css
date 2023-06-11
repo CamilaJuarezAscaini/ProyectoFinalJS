@@ -14,7 +14,7 @@ body {
 }
 
 /* LOGO */
-header img {
+.logoPrincipal {
   margin: auto;
   display: block;
   height: 20%;
@@ -25,10 +25,6 @@ h1 {
   color: rgb(37, 100, 118);
   text-align: center;
   font-size: 35px;
-}
-
-h2 {
-  margin-top: 35px;
 }
 
 #imgCarrito {
@@ -55,7 +51,7 @@ main section iframe {
   width: 40%;
 }
 
-#posiCarrito {
+.posiCarrito {
   position: fixed;
   right: 5%;
 }
@@ -81,4 +77,10 @@ main section iframe {
 .tamañoCard {
   margin-right: 50px;
   margin-bottom: 40px;
+}
+
+.positionSticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }/*# sourceMappingURL=style.css.map */

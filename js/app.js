@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // LISTA PRODUCTOS
-    function generarProductos() {
+    async function generarProductos() {
+        const resp = await fetch('../baseDeDatos.json')
+        const baseDeDatos = await resp.json()
+       
         baseDeDatos.forEach((item) => {
             const card = document.createElement("div");
             card.classList.add("card", "col-sm-3", "tamañoCard");
@@ -47,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btnAgregar.setAttribute('marcador', item.id);
         });
     }
+    
 
 
     // AGREGAR PRODUCTOS AL CARRITO
@@ -70,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             const numUnidades = carrito.reduce((total, itemId) => {
                 return itemId === item ? total += 1 : total;
-            }, 0);
+            }, 0); 
 
             // CARRITO LISTA
             const carritoLista = document.createElement('li');
@@ -165,26 +169,3 @@ document.addEventListener('DOMContentLoaded', () => {
     carritoCompra();
 });
 
-
-
-// ............. FETCH
-
-// fetch('../baseDeDatos.json')
-//     .then((response) => {
-//         if (response.ok) {
-//             return response.json();
-//         } else{
-//             throw new Error('Error en el servidor: ' +response.status);
-//         }
-//     })
-//     .then((baseDeDatos) =>{
-//         // que
-//     })
-//     .catch((error) =>{
-//         Swal.fire({
-//             title: 'Error!',
-//             text: 'En este momento no podemos cargar la página. Disculpe las molestias!',
-//             icon: 'error',
-//             confirmButtonText: 'Cool'
-//           })
-//     })
