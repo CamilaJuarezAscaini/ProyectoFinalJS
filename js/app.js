@@ -1,20 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let baseDeDatos = [
-        { id: 1, nombre: "Lengua de Suegra", precio: 2000, imageUrl: "LenguaDeSuegra.png" },
-        { id: 2, nombre: "Potus", precio: 1500, imageUrl: "potuss.jpg" },
-        { id: 3, nombre: "Rosario Corazon", precio: 2500, imageUrl: "RosarioCorazon.png" },
-        { id: 4, nombre: "Palmito", precio: 1000, imageUrl: "Palmito.png" },
-        { id: 5, nombre: "Lirio de la Paz", precio: 2000, imageUrl: "lilirios.jpg" },
-        { id: 6, nombre: "China del Dinero", precio: 2000, imageUrl: "ChinaDinero.png" },
-        { id: 7, nombre: "Pluma Rosa", precio: 4000, imageUrl: "plumaRosa.png" },
-        { id: 8, nombre: "Alocasia", precio: 6000, imageUrl: "alocasia.png" },
-        { id: 9, nombre: "Monstera Deliciosa", precio: 6800, imageUrl: "MonsteraDeliciosa.png" },
-        { id: 10, nombre: "Orquídea", precio: 4200, imageUrl: "orquidea.png" },
-        { id: 11, nombre: "Begonia Rex", precio: 5000, imageUrl: "Rex.png" },
-        { id: 12, nombre: "Lazo de Amor", precio: 3400, imageUrl: "LazoDeAmor.jpg" },
-    ];
-
     let carrito = [];
     const divisa = '$';
 
@@ -27,10 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // LISTA PRODUCTOS
+    async function traerProductos() {
+        return await fetch('../baseDeDatos.json')
+            .then((baseDeDatos) => {
+                if (baseDeDatos.ok) {
+                    return baseDeDatos.json();
+                }
+            })
+    }
+
     async function generarProductos() {
-        const resp = await fetch('../baseDeDatos.json')
-        const baseDeDatos = await resp.json()
-       
+        const baseDeDatos = await traerProductos();
         baseDeDatos.forEach((item) => {
             const card = document.createElement("div");
             card.classList.add("card", "col-sm-3", "tamañoCard");
@@ -50,7 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
             btnAgregar.setAttribute('marcador', item.id);
         });
     }
-    
+
+
+
+
 
 
     // AGREGAR PRODUCTOS AL CARRITO
@@ -65,7 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // CARRITO
 
-    function carritoCompra() {
+    async function carritoCompra() {
+        const baseDeDatos = await traerProductos();
         DOMcarrito.innerHTML = '';
         const carritoSinDuplicados = [...new Set(carrito)];
         carritoSinDuplicados.forEach((item) => {
@@ -74,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             const numUnidades = carrito.reduce((total, itemId) => {
                 return itemId === item ? total += 1 : total;
-            }, 0); 
+            }, 0);
 
             // CARRITO LISTA
             const carritoLista = document.createElement('li');
@@ -90,6 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
             btnBorrar.addEventListener('click', borrarItemCarrito);
             carritoLista.appendChild(btnBorrar);
         });
+
+        // CALCULAR TOTAL
+
+        function calcularTotal() {
+            return carrito.reduce((acum, elem) => {
+                const itemCarrito = baseDeDatos.filter((itemBaseDatos) => {
+                    return itemBaseDatos.id === parseInt(elem);
+                });
+                return acum + itemCarrito[0].precio;
+            }, 0);
+        }
         DOMtotal.textContent = calcularTotal();
     }
 
@@ -114,8 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-
-
     // BORRAR 1 ELEMENTO
     function borrarItemCarrito(evento) {
         const id = evento.target.dataset.item;
@@ -126,15 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
         guardarCarritoEnLocalStorage();
     }
 
-    //  CALCULAR TOTAL
-    function calcularTotal() {
-        return carrito.reduce((acum, elem) => {
-            const itemCarrito = baseDeDatos.filter((itemBaseDatos) => {
-                return itemBaseDatos.id === parseInt(elem);
-            });
-            return acum + itemCarrito[0].precio;
-        }, 0);
-    }
 
     // BOTON DISABLED
     function disabledBtn() {

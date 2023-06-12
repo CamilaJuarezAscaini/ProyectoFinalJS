@@ -9,16 +9,22 @@
 
 }
 
+
+// VARIABLES
+$espacioSuperior: 35px;
+$masEspacio: 80px;
+
 // TITULOS
 
 h1 {
     color: rgb(40, 97, 113);
     text-align: center;
     font-size: 35px;
+    margin-top: $espacioSuperior;
 }
 
-h2{
-    color: rgb(92, 138, 151);
+h2 {
+    color: rgb(86, 128, 140);
     text-align: center;
     font-size: 25px;
     margin-top: $espacioSuperior;
@@ -31,13 +37,16 @@ h3 {
     font-size: 22px;
 }
 
+h4 {
+    color: rgb(86, 128, 140);
+    text-align: center;
+}
+
 h5 {
     margin-top: 35px;
     font-size: 96%;
 }
 
-// VARIABLES
-$espacioSuperior: 35px;
 
 
 body {
@@ -62,20 +71,30 @@ body {
     width: 30px;
 }
 
-#texto {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    margin-top: $espacioSuperior;
+#indexP {
+    section {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin-top: $espacioSuperior;
 
-    ul {
-        list-style-type: none;
+        h1 {
+            margin-top: $espacioSuperior;
+        }
+
+        ul {
+            list-style-type: none;
+        }
     }
-}
 
-main {
     section {
         margin-top: $espacioSuperior;
+
+        h1 {
+            color: rgb(40, 97, 113);
+            text-align: center;
+            font-size: 35px;
+        }
 
         iframe {
             margin-left: 30%;
@@ -86,8 +105,9 @@ main {
 }
 
 
+
 .posiCarrito {
-    position: fixed;
+    position: relative;
     right: 5%;
 }
 
@@ -102,7 +122,6 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 850px;
 }
 
 .centrado {
@@ -112,6 +131,7 @@ main {
 .tamañoCard {
     margin-right: 50px;
     margin-bottom: 40px;
+    width: 210px;
 }
 
 .positionSticky {
@@ -120,3 +140,22 @@ main {
     z-index: 1000;
 }
 
+// PAGINA-DESCUBRE
+#descubre {
+    h1 {
+        margin-top: $masEspacio;
+    }
+    p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    div {
+        margin-top: $espacioSuperior;
+
+        p {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    }
+}
